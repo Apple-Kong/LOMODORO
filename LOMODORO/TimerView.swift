@@ -14,17 +14,20 @@ struct PomodoroCircleView: View {
     @Environment(\.scenePhase) private var scenePhase // scene phase
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-
+    
     var body: some View {
         ZStack {
             
             CircularProgressView(progress: progress)
                 .padding(.horizontal, 20)
             
+            Text("\(timeString(time: Int(25 * 60 - progress * 25 * 60)))")
+                .font(.system(size: 80))
+                .padding(.bottom, 40)
+            
             VStack {
-                Text("\(timeString(time: Int(25 * 60 - progress * 25 * 60)))")
-                    .font(.system(size: 80))
-                    .padding(.bottom, 40)
+            
+                Spacer()
                 
                 HStack {
                     if !isRunning {
@@ -44,6 +47,7 @@ struct PomodoroCircleView: View {
                         }
                     }
                 }
+                .padding(.bottom, 20)
             }
         }
         .onReceive(timer) { _ in
