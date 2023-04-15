@@ -21,8 +21,9 @@ extension Color {
         self.init(red: red, green: green, blue: blue)
     }
     
-    static let primary = Color(hex: "FF0000")
     
-    static let tint = Color(hex: "FF0000")
+    static let background = Color(hex: "F9F5EB")
+    static let primary = Color(hex: "EA5455")
+    static let tint = Color(hex: "002B5B")
 }
 
