@@ -11,6 +11,7 @@
 		C08A17C229EAAA58000EF116 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08A17C129EAAA58000EF116 /* TimerView.swift */; };
 		C08A17C429EAAA59000EF116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08A17C329EAAA59000EF116 /* Assets.xcassets */; };
 		C08A17C729EAAA59000EF116 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08A17C629EAAA59000EF116 /* Preview Assets.xcassets */; };
+		C08A17CE29EAAFE0000EF116 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08A17CD29EAAFE0000EF116 /* CircularProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		C08A17C129EAAA58000EF116 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		C08A17C329EAAA59000EF116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C08A17C629EAAA59000EF116 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C08A17CD29EAAFE0000EF116 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				C08A17BF29EAAA58000EF116 /* LOMODOROApp.swift */,
 				C08A17C129EAAA58000EF116 /* TimerView.swift */,
+				C08A17CD29EAAFE0000EF116 /* CircularProgressView.swift */,
 				C08A17C329EAAA59000EF116 /* Assets.xcassets */,
 				C08A17C529EAAA59000EF116 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C08A17C229EAAA58000EF116 /* TimerView.swift in Sources */,
+				C08A17CE29EAAFE0000EF116 /* CircularProgressView.swift in Sources */,
 				C08A17C029EAAA58000EF116 /* LOMODOROApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
