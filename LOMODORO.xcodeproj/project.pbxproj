@@ -12,6 +12,8 @@
 		C08A17C429EAAA59000EF116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08A17C329EAAA59000EF116 /* Assets.xcassets */; };
 		C08A17C729EAAA59000EF116 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C08A17C629EAAA59000EF116 /* Preview Assets.xcassets */; };
 		C08A17CE29EAAFE0000EF116 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08A17CD29EAAFE0000EF116 /* CircularProgressView.swift */; };
+		C08A17D129EAB201000EF116 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08A17D029EAB201000EF116 /* RoundedButton.swift */; };
+		C08A17D329EAB21F000EF116 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08A17D229EAB21F000EF116 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		C08A17C329EAAA59000EF116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C08A17C629EAAA59000EF116 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C08A17CD29EAAFE0000EF116 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		C08A17D029EAB201000EF116 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		C08A17D229EAB21F000EF116 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				C08A17BF29EAAA58000EF116 /* LOMODOROApp.swift */,
+				C08A17CF29EAB1E0000EF116 /* Extension */,
 				C08A17C129EAAA58000EF116 /* TimerView.swift */,
 				C08A17CD29EAAFE0000EF116 /* CircularProgressView.swift */,
 				C08A17C329EAAA59000EF116 /* Assets.xcassets */,
@@ -68,6 +73,15 @@
 				C08A17C629EAAA59000EF116 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C08A17CF29EAB1E0000EF116 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C08A17D229EAB21F000EF116 /* Color.swift */,
+				C08A17D029EAB201000EF116 /* RoundedButton.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +157,8 @@
 				C08A17C229EAAA58000EF116 /* TimerView.swift in Sources */,
 				C08A17CE29EAAFE0000EF116 /* CircularProgressView.swift in Sources */,
 				C08A17C029EAAA58000EF116 /* LOMODOROApp.swift in Sources */,
+				C08A17D329EAB21F000EF116 /* Color.swift in Sources */,
+				C08A17D129EAB201000EF116 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

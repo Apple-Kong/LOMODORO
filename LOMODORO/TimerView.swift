@@ -19,11 +19,10 @@ struct PomodoroCircleView: View {
         ZStack {
             
             CircularProgressView(progress: progress)
-                .padding(.horizontal, 20)
+                .padding(.horizontal, 40)
             
             Text("\(timeString(time: Int(25 * 60 - progress * 25 * 60)))")
-                .font(.system(size: 80))
-                .padding(.bottom, 40)
+                .font(.system(size: 60))
             
             VStack {
             
@@ -31,23 +30,17 @@ struct PomodoroCircleView: View {
                 
                 HStack {
                     if !isRunning {
-                        Button(action: startTimer) {
-                            Text("Start")
-                                .font(.system(size: 30))
-                        }
+                        RoundedButton(buttonTitle: "게속", buttonColor: .primary, textColor: .white, action: startTimer)
+                            .animation(.easeInOut)
                     } else {
-                        Button(action: stopTimer) {
-                            Text("Stop")
-                                .font(.system(size: 30))
-                        }
-                        .padding(.horizontal, 20)
-                        Button(action: resetTimer) {
-                            Text("Reset")
-                                .font(.system(size: 30))
-                        }
+                        RoundedButton(buttonTitle: "일시정지", buttonColor: .primary, textColor: .white, action: stopTimer)
+                            .animation(.easeInOut)
+                        
+                        RoundedButton(buttonTitle: "리셋", buttonColor: .primary, textColor: .white, action: resetTimer)
+                            .animation(.easeInOut)
                     }
                 }
-                .padding(.bottom, 20)
+                .padding(20)
             }
         }
         .onReceive(timer) { _ in
@@ -88,17 +81,24 @@ struct PomodoroCircleView: View {
     }
     
     func startTimer() {
-        isRunning = true
+        withAnimation {
+            isRunning = true
+        }
+        
     }
     
     func stopTimer() {
-        isRunning = false
+        withAnimation {
+            isRunning = false
+        }
     }
     
     func resetTimer() {
-        isRunning = false
-        isBreak = false
-        progress = 0.0
+        withAnimation {
+            isRunning = false
+            isBreak = false
+            progress = 0.0
+        }
     }
     
     func timeString(time: Int) -> String {
