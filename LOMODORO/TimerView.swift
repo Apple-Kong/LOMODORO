@@ -42,6 +42,7 @@ struct PomodoroCircleView: View {
                     }) {
                         Image(systemName: self.timer.mode == .running ? "pause.circle.fill" : "play.circle.fill")
                             .resizable()
+                            .tint(Color.primary)
                             .frame(width: 50, height: 50)
                     }
                     .padding()
@@ -51,6 +52,7 @@ struct PomodoroCircleView: View {
                     }) {
                         Image(systemName: "arrow.counterclockwise.circle.fill")
                             .resizable()
+                            .tint(.tint)
                             .frame(width: 50, height: 50)
                     }
                     
